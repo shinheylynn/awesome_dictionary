@@ -1,10 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from 'react';
+import * as S from './Main.styles';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+type MainProps = {};
+
+const Main: React.FC<MainProps> = () => {
+  return <S.Wrapper>Awesome dictionary</S.Wrapper>;
+};
+
+export default Main;
